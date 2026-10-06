@@ -1,0 +1,17 @@
+[project]
+name = "pageturner"
+version = "0.1.0"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "mediapipe==0.10.21",
+    "opencv-python<4.11",
+    "pynput>=1.8.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
